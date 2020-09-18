@@ -7,16 +7,21 @@
   </head>
   <body>
     <h1>Conversor de binário para decimal</h1>
-    <p id="demo"></p>
+
     <div>
-      <h4>Digite o número em um dos campos abaixo</h6>
+      <p>Digite um número binário no campo abaixo:</p>
+
       <label for="inputBinary">Binário: </label>
-      <input id="inputBinary" type="text" onchange="bin2dec()" maxlength="8"/><br /><br />
+      <input id="inputBinary" type="text" maxlength="8" /><br /><br />
+
+      <button id="buttonConvert" onclick="bin2dec()">Converter</button>
       <p id="valueInvalid"></p>
 
       <label for="convertDec">Decimal: </label>
-      <input id="convertDec" type="text" onchange="convertDec()" />
+      <input id="convertDec" type="text" value=" " />
     </div>
-    <script src="/Projeto_Bin2Dec/index.js"></script>
+    <p id="c5onvertDec"></p>
+
+    <script src="main.js"></script>
   </body>
 </html>
