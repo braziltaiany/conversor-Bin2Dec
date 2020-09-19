@@ -2,7 +2,7 @@ document.addEventListener('keypress', (event) => {
   const keyName = event.key;
   if (keyName != 1 && keyName != 0) {
     document.getElementById('valueInvalid').innerHTML =
-      'Valor inválido, por favor digite apenas 0 e/ou 1';
+      ' Valor inválido! <br> Por favor digite apenas combinações com 0 e 1.';
   }
 });
 

@@ -1,0 +1,61 @@
+.textTitle {
+  width: 80%;
+  color: #32264d;
+  margin: 0%;
+}
+p {
+  color: #5b536e;
+}
+
+label {
+  color: #6a6180;
+}
+
+body,
+input {
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  color: #6a6180;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #5b536e;
+  padding: 1rem;
+}
+.grid-item {
+  background-color: #ffffffd2;
+  border: 0.4rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  background: #5b536e;
+  color: #ffffffd2;
+  border: 0;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font: 700 1.8rem Archivo;
+  font-size: 1.6rem;
+  padding: 0.9rem;
+}
+
+button:hover {
+  background: #6c6381;
+}
+#button {
+  padding-top: 1.2rem;
+}
+#valueInvalid {
+  color: #f50b0b;
+  margin-left: 0.6rem;
+  font: 700 1.8rem Archivo;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}

@@ -4,23 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bin2Dec</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Conversor de binário para decimal</h1>
+    <p>Digite um número binário no campo abaixo:</p>
+
+    <div class="grid-container">
+      <div class="grid-item">
+        <label for="inputBinary">Binário </label>
+        <input id="inputBinary" type="text" maxlength="8" /><br /><br />
+      </div>
+
+      <div id="button" class="grid-item">
+        <button id="buttonConvert" onclick="bin2dec()">Converter</button>
+      </div>
+
+      <div class="grid-item">
+        <label for="convertDec">Decimal </label>
+        <input id="convertDec" type="text" value=" " />
+      </div>
+    </div>
 
     <div>
-      <p>Digite um número binário no campo abaixo:</p>
-
-      <label for="inputBinary">Binário: </label>
-      <input id="inputBinary" type="text" maxlength="8" /><br /><br />
-
-      <button id="buttonConvert" onclick="bin2dec()">Converter</button>
       <p id="valueInvalid"></p>
-
-      <label for="convertDec">Decimal: </label>
-      <input id="convertDec" type="text" value=" " />
     </div>
-    <p id="c5onvertDec"></p>
 
     <script src="main.js"></script>
   </body>
