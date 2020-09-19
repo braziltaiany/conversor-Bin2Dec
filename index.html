@@ -13,27 +13,30 @@
     />
   </head>
   <body>
-    <h1>Conversor de binário para decimal</h1>
-    <p>Digite um número binário no campo abaixo:</p>
+    <div>
+      <h1>Bin2Dec</h1>
+    </div>
+    <div class="container">
+      <div class="itemP">
+        <h1>Conversor de binário para decimal</h1>
+        <p>Digite um número binário no campo abaixo</p>
+      </div>
+      <div>
+        <label for="inputBinary">Binário: </label>
+        <input id="inputBinary" type="text" maxlength="8" />
+        <small>(máx. 8 caracteres)</small>
 
-    <div class="grid-container">
-      <div class="grid-item">
-        <label for="inputBinary">Binário </label>
-        <input id="inputBinary" type="text" maxlength="8" /><br /><br />
+        <p id="valueInvalid"></p>
       </div>
 
-      <div id="button" class="grid-item">
+      <div id="container-button">
         <button id="buttonConvert" onclick="bin2dec()">Converter</button>
       </div>
 
-      <div class="grid-item">
-        <label for="convertDec">Decimal </label>
-        <input id="convertDec" type="text" value=" " />
+      <div id="container-decimal">
+        <label for="convertDec">Decimal: </label>
+        <input id="convertDec" type="text" value=" " disabled />
       </div>
-    </div>
-
-    <div>
-      <p id="valueInvalid"></p>
     </div>
 
     <script src="main.js"></script>

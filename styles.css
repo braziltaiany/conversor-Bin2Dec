@@ -1,38 +1,30 @@
-.textTitle {
-  width: 80%;
-  color: #32264d;
-  margin: 0%;
+h1 {
+  color: #004d40;
 }
 p {
-  color: #5b536e;
+  color: #3b615d;
 }
 
 label {
-  color: #6a6180;
+  color: #46706c;
 }
 
+small {
+  font-size: 0.8rem;
+}
+div {
+  margin-left: 2.4rem;
+}
 body,
 input {
   font-weight: 500;
   font-family: Poppins;
   font-size: 1.6rem;
-  color: #6a6180;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #5b536e;
-  padding: 1rem;
-}
-.grid-item {
-  background-color: #ffffffd2;
-  border: 0.4rem;
-  padding: 1rem;
-  text-align: center;
+  color: #45a097;
 }
 
 button {
-  background: #5b536e;
+  background: #004d40;
   color: #ffffffd2;
   border: 0;
   border-radius: 0.6rem;
@@ -43,19 +35,43 @@ button {
 }
 
 button:hover {
-  background: #6c6381;
+  background: #026151;
 }
-#button {
-  padding-top: 1.2rem;
-}
+
 #valueInvalid {
   color: #f50b0b;
   margin-left: 0.6rem;
   font: 700 1.8rem Archivo;
 }
 
-@media (min-width: 700px) {
-  :root {
-    font-size: 62.5%;
-  }
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.container > div {
+  background-color: #b2dfdb;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 0.8rem;
+}
+
+.itemP {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#container-button {
+  padding-top: 2rem;
+  background-color: #ffffff;
+  text-align: initial;
+  margin: 0px;
+}
+
+#container-decimal {
+  padding: 1.2rem;
 }
