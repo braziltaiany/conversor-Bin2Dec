@@ -1,14 +1,22 @@
-document.addEventListener('keypress', (event) => {
+document.addEventListener('keyup', (event) => {
   const keyName = event.key;
+
   if (keyName != 1 && keyName != 0) {
-    document.getElementById('valueInvalid').innerHTML =
-      ' Valor inválido! <br> Por favor digite apenas combinações com 0 e 1. <br> Exemplo: 101101';
+    let valueInvalid = document.getElementById('valueInvalid');
+
+    valueInvalid.innerHTML = `${keyName} é um valor inválido! 
+    <br> Por favor digite apenas combinações com 0 e 1.
+    <br> Exemplo: 101101`;
+
+    let fieldBinary = document.getElementById('inputBinary');
+    fieldBinary.value = fieldBinary.value.slice(0, -1);
+  } else {
+    valueInvalid.innerHTML = '';
   }
 });
 
-function bin2dec() {
+bin2dec = () => {
   let fieldBinary = document.getElementById('inputBinary').value;
-
   let quantity = fieldBinary.length;
   let pos = fieldBinary.length;
 
@@ -22,4 +30,4 @@ function bin2dec() {
   } while (i < quantity);
 
   document.getElementById('convertDec').value = dec;
-}
+};
